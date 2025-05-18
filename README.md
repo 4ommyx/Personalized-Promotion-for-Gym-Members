@@ -1,5 +1,5 @@
 
-# 📊 Gym Member Analytics & Segmentation
+# Gym Member Analytics & Segmentation
 
 This project analyzes a dataset of **973 gym members** with the goal of building a classification model to predict fitness experience levels and performing customer segmentation to suggest personalized promotions and strategies.
 
@@ -19,7 +19,7 @@ The dataset includes :
 - Segment customers using clustering(K-mean)  
 - Design actionable marketing strategies based on segments
 
-## 🧠 Experience Level Prediction (Classification Model)
+## Experience Level Prediction (Classification Model)
 
 Models tested
 - **KNN**
@@ -39,9 +39,8 @@ New features created to enhance analysis
 | `Fat_Percentage_to_Water_Ratio` | Fat_Percentage / Water_Intake (%/L) |
 | `Consistency_Score` | Session_Duration × Workout_Frequency (hours/week) |
 
----
 
-## 👥 Customer Segmentation
+## Customer Segmentation
 
 Segmentation was done using KMeans based on:
 - `Intensity_Score`
@@ -51,9 +50,8 @@ Segmentation was done using KMeans based on:
 **Optimal number of clusters: 4 (based on Elbow + Silhouette Score)**  
 Generated interactive **3D scatter plot** for segment visualization.
 
----
 
-## 🎯 Segment Profiles & Actions
+## Segment Profiles & Actions
 
 | Segment | Profile | Strategy |
 |---------|---------|----------|
@@ -62,34 +60,8 @@ Generated interactive **3D scatter plot** for segment visualization.
 | **2** | Intense but inconsistent | Coaching plan, habit-building tools |
 | **3** | At-risk group | Health recovery programs, beginner support |
 
----
-
-## 📈 Visualization Highlights
+## Visualization Highlights
 
 - 📊 Radar Chart comparing segment behavior  
 - 🎥 3D Animated Cluster Visualization  
 - 📉 Elbow + Silhouette Score for optimal clustering
-
----
-
-## 📦 Tech Stack
-
-- Python (Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, Plotly)
-- Jupyter Notebook
-- Machine Learning (Classification & Clustering)
-
----
-
-## 📁 Files
-
-- `gym_aom.ipynb` → Main notebook with full code
-- `segment_radar.png`, `cluster_3d.mp4` → Visualization outputs
-- `README.md` → Project summary
-
----
-
-## 🚀 Next Steps
-
-- Add deep learning model (MLP) for comparison  
-- Deploy segmentation logic as web app  
-- Monitor user feedback on suggested promotions
