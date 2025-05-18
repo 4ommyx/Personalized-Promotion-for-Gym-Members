@@ -47,7 +47,7 @@ Segmentation was done using KMeans based on:
 - `Fat_Percentage_to_Water_Ratio`
 - `Consistency_Score`
 
-**Optimal number of clusters: 4 (based on Elbow + Silhouette Score)**  
+**Optimal number of clusters : 4 (based on Elbow + Silhouette Score)**  
 Generated interactive **3D scatter plot** for segment visualization.
 
 
