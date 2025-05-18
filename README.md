@@ -3,49 +3,41 @@
 
 This project analyzes a dataset of **973 gym members** with the goal of building a classification model to predict fitness experience levels and performing customer segmentation to suggest personalized promotions and strategies.
 
----
+## Dataset Overview
 
-## 📁 Dataset Overview
+The dataset includes :
+- **Demographics :** Age, Gender, Height, Weight  
+- **Workout Info :** Duration, Calories, Type, Frequency  
+- **Biometric Data :** Heart Rate, Fat Percentage, Water Intake  
+- **Target Variable :** `Experience_Level` (1: Beginner → 3: Expert)
 
-The dataset includes:
-- **Demographics:** Age, Gender, Height, Weight  
-- **Workout Info:** Duration, Calories, Type, Frequency  
-- **Biometric Data:** Heart Rate, Fat Percentage, Water Intake  
-- **Target Variable:** `Experience_Level` (1: Beginner → 3: Expert)
+## Project Objectives
 
----
+- Perform **EDA and Feature Engineering**  
+- Create new insightful metrics
+- **Predict** member **Experience_Level** using classification models  
+- Segment customers using clustering(K-mean)  
+- Design actionable marketing strategies based on segments
 
-## 🔍 Project Objectives
+## 🧠 Experience Level Prediction (Classification Model)
 
-- ✅ **Predict** member **Experience_Level** using classification models  
-- ✅ Perform **EDA & Feature Engineering**  
-- ✅ Create new insightful metrics  
-- ✅ Segment customers using clustering  
-- ✅ Design actionable marketing strategies based on segments
-
----
-
-## ⚙️ Feature Engineering
-
-New features created to enhance analysis:
-
-| Feature | Description |
-|--------|-------------|
-| `Intensity_Score` | Calories_Burned / Session_Duration (cal/hours) |
-| `Fat_Percentage_to_Water_Ratio` | Fat_Percentage / Water_Intake (%/L) |
-| `Consistency_Score` | Session_Duration × Workout_Frequency (hours/week) |
-
----
-
-## 🧠 Experience Level Prediction
-
-Models tested:
+Models tested
 - **KNN**
 - **Decision Tree**
 - **Random Forest**
 - **SVM**
 
 > 📈 **Best Accuracy: 92.31% (Random Forest with GridSearchCV)**
+
+## Feature Engineering (Segmentation)
+
+New features created to enhance analysis
+
+| Feature | Description |
+|--------|-------------|
+| `Intensity_Score` | Calories_Burned / Session_Duration (cal/hours) |
+| `Fat_Percentage_to_Water_Ratio` | Fat_Percentage / Water_Intake (%/L) |
+| `Consistency_Score` | Session_Duration × Workout_Frequency (hours/week) |
 
 ---
 
